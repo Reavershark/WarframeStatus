@@ -20,12 +20,11 @@ function callApi() {
         resp.on('end', () => {
             dataObj = JSON.parse(data)
             console.log(dataObj)
-            console.log(dataObj.type)
-            if (dataObj.type != previous) {
+            if (dataObj.node != previous && dataObj.node == "undefined (undefined)") {
                 channels.forEach(function(channel) {
-                    channel.send(JSON.stringify(dataObj, null, 4))
+                    channel.send("Current arbitration is disruption :shamporeclame:")
                 })
-                previous = dataObj.type
+                previous = dataObj.node
             }
         })
     
