@@ -1,0 +1,16 @@
+{
+  "name": "warframe-worldstate-bot",
+  "version": "1.0.0",
+  "description": "A warframe bot for discord for tracking specific events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.1.0",
+    "https": "^1.0.0"
+  }
+}
